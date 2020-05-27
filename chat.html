@@ -10,9 +10,10 @@
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Chat ㅣ Kakao Clone</title>
   </head>
-  <body>
+  <body class="chats-body">
     <div class="status-bar">
       <div class="status-bar__column">
         <span class="status-bar__clock">20:30</span>
@@ -26,42 +27,54 @@
       </div>
     </div>
     <header class="header">
-      <div class="header__column">
+      <div class="header__header-column">
           <a href="index.html" class="header__back-btn">
-              <i class="fas fa-arrow-left fa-2x"></i>
+              <i class="fas fa-arrow-left"></i>
               </a>
-        <h1>Best Friend</h1>
+        <h1 class="header__title">Best Friend</h1>
       </div>
       <div class="header__column">
-        <span class="header__icons">
+        <span class="header__icon">
           <i class="fas fa-search"></i>
+        </span>
+        <span class="header__icon">
           <i class="fas fa-bars"></i>
         </span>
           </a>
         </span>
       </div>
     </header>
-    <main class="chat">
+    <main class="chat-screen">
         <ul class="chat__messages">
             <span class="chat__timestamp">Friday, May 25, 2020</span>
             <li class="incoming-message message">
-                <img src="images/annmarie.png" class="g-avatar message__avatar" width="200px;">
+                <img src="images/annmarie.png" class="m-avatar message__avatar" width="200px;">
                 <div class="message__content">
                     <span class="message__author">Ann Marie</span>
                     <div class="message__bubble">
-                        Can you help me? 
+                        What are you doing?
                     </div>
                 </div>
-                <span class="message__Timestamp"></span>
+                <span class="message__timestamp"></span>
             </li>
-            <li class="incoming-message message">
-                    <span class="message__Timestamp"></span>
+            <li class="sent-message message">
+                    <span class="message__timestamp"></span>
                     <div class="message__content">
                         <div class="message__bubble">
-                            No. Sorry, I'm very very busy.
+                            You don't have to know that.
                         </div>
                     </div>
                 </li>
+                <li class="incoming-message message">
+                  <img src="images/annmarie.png" class="m-avatar message__avatar" width="200px;">
+                  <div class="message__content">
+                      <span class="message__author">Ann Marie</span>
+                      <div class="message__bubble">
+                          T . T
+                      </div>
+                  </div>
+                  <span class="message__timestamp"></span>
+              </li>
         </ul>
     </main>
     <div class="chat__write">
@@ -79,6 +92,9 @@
                 <i class="fas fa-microphone"></i>
             </span>
         </div>
+    </div>
+    <div class="bigScreen">
+      <span class="bigScree__text">Please make your scren small!</span>
     </div>
   </body> 
 </html>
